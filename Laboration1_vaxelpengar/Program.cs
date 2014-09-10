@@ -25,13 +25,22 @@ namespace Laboration1_vaxelpengar
                     total = double.Parse(TotalText);
                     break;
                 }
-
-                catch
+                catch(FormatException) // Visa felmeddelande om något annat än ett tal skrivs in
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("ERROR: Felaktigt belopp angivet!");
                     Console.ResetColor();
                 }
+
+            // Visa felmeddelande om totalt belopp är under 1kr efter avrundning
+            if ((uint)Math.Round(total) < 1)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine("ERROR: Summan är för låg, köpet kunde inte genomföras");
+                Console.ResetColor();
+                return;
+            }
+
 
             // Ange erhållen summa
             while (true)
@@ -44,12 +53,20 @@ namespace Laboration1_vaxelpengar
                 }
 
 
-                catch
+                catch(FormatException)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("ERROR: Felaktigt belopp angivet!");
                     Console.ResetColor();
                 }
+
+            if ((uint)Math.Round(total) > recievedSum)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine("ERROR: Erhållen summa är för låg, köpet kunde inte genomföras");
+                Console.ResetColor();
+                return;
+            }
 
             // Avrunda ören
             total = double.Parse(TotalText);
