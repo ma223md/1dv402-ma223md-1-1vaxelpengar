@@ -1,0 +1,6 @@
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.exe.config
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.csprojResolveAssemblyReference.cache
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.exe
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.pdb
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.exe
+c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.pdb
