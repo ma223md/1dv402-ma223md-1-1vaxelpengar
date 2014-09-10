@@ -77,16 +77,61 @@ namespace Laboration1_vaxelpengar
             Console.WriteLine("Tillbaka: {0, 15}", sumBack);
             Console.WriteLine("-------------------------------");
             Console.WriteLine("");
+ 
 
-            // Ange vilka valörer som ska ges tillbaka
+            //Console.WriteLine("500-lappar: " + (uint)sumBack / 500);
+            //Console.WriteLine("100-lappar: " + rest / 100);
+            //Console.WriteLine("20-lappar: " + (rest % 100) / 20);
+            //Console.WriteLine("10-kronor: " + ((rest % 100) % 20) / 10);
+            //Console.WriteLine("5-kronor: " + (((rest % 100) % 20) % 10) / 5);
+            //Console.WriteLine("1-kronor: " + ((((rest % 100) % 20) % 10) % 5) / 1);
+
+
+            // Ange vilka valörer som ska ges tillbaka, ENDAST
             uint rest = (uint)sumBack % 500;
+            if (sumBack > 0)
+            { 
+                if ((uint)sumBack / 500 > 0)
+                {
+                    Console.WriteLine("500-lappar: " + (uint)sumBack / 500);
+                }
 
-            Console.WriteLine("500-lappar: " + (uint)sumBack / 500);
-            Console.WriteLine("100-lappar: " + rest / 100);
-            Console.WriteLine("20-lappar: " + (rest % 100) / 20);
-            Console.WriteLine("10-kronor: " + ((rest % 100) % 20) / 10);
-            Console.WriteLine("5-kronor: " + (((rest % 100) % 20) % 10) / 5);
-            Console.WriteLine("1-kronor: " + ((((rest % 100) % 20) % 10) % 5) / 1);
+                if (rest / 100 > 0)
+                {
+                    Console.WriteLine("100-lappar: " + rest / 100);
+                }
+                rest = (rest % 100);
+
+                if (rest / 50 > 0)
+                {
+                    Console.WriteLine("50-lappar: " + rest / 50);
+                }
+                rest = (rest % 50);
+
+                if (rest / 20 > 0)
+                {
+                    Console.WriteLine("20-lappar: " + rest / 20);
+                }
+                rest = (rest % 20);
+
+                if (rest / 10 > 0)
+                {
+                    Console.WriteLine("10-kronor: " + rest / 10);
+                }
+                rest = (rest % 10);
+
+                if (rest / 5 > 0)
+                {
+                    Console.WriteLine("5-kronor: " + rest / 5);
+                }
+                rest = (rest % 5);
+
+                if (rest / 1 > 0)
+                {
+                    Console.WriteLine("1-kronor: " + rest / 1);
+                }
+            }
+
         }
     }
 }

@@ -4,3 +4,9 @@ c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Labor
 c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.pdb
 c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.exe
 c:\users\moe\documents\visual studio 2013\Projects\Laboration1_vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.pdb
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.exe.config
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.exe
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.pdb
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.exe
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\bin\Debug\Laboration1_vaxelpengar.pdb
+C:\Users\Moe\Documents\Skolarbete\Inledande programmering C#\Laborationer\1dv402-ma223md-1-1vaxelpengar\Laboration1_vaxelpengar\obj\Debug\Laboration1_vaxelpengar.csprojResolveAssemblyReference.cache
