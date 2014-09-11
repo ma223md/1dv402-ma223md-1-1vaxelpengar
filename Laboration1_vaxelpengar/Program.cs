@@ -25,7 +25,8 @@ namespace Laboration1_vaxelpengar
                     total = double.Parse(TotalText);
                     break;
                 }
-                catch(FormatException) // Visa felmeddelande om något annat än ett tal skrivs in
+                // Visa felmeddelande om något annat än ett tal skrivs in
+                catch(FormatException) 
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("ERROR: Felaktigt belopp angivet!");
@@ -52,15 +53,16 @@ namespace Laboration1_vaxelpengar
                     break;
                 }
 
-
-                catch(FormatException)
+                // Visa felmeddelande om något annat än ett tal skrivs in
+                catch(FormatException) 
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("ERROR: Felaktigt belopp angivet!");
                     Console.ResetColor();
                 }
 
-            if ((uint)Math.Round(total) > recievedSum)
+            // Visa felmeddelande om erhållen summa är mindre än betalsumman
+            if ((uint)Math.Round(total) > recievedSum) 
             {
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine("ERROR: Erhållen summa är för låg, köpet kunde inte genomföras");
@@ -71,7 +73,7 @@ namespace Laboration1_vaxelpengar
             // Avrunda ören
             total = double.Parse(TotalText);
             subTotal = (uint)Math.Round(total);
-            roundingOffAmount = total - subTotal;
+            roundingOffAmount = subTotal - total;
 
             // Räkna ut summa att få tillbaka
             recievedSum = uint.Parse(recievedSumText);
@@ -83,7 +85,7 @@ namespace Laboration1_vaxelpengar
             Console.WriteLine("KVITTO");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("Total summa: {0, 5} {1, 15}", equals, total);
-            Console.WriteLine("Öresavrundning: {0, 2} {1, 15:f2}", equals, roundingOffAmount);
+            Console.WriteLine("Öresavrundning: {0, 2} {1, 15:c}", equals, roundingOffAmount);
             Console.WriteLine("Att betala: {0, 6} {1, 15}", equals, subTotal);
             Console.WriteLine("Kontant: {0, 9} {1, 15}", equals, recievedSum);
             Console.WriteLine("Tillbaka: {0, 8} {1, 15}", equals, sumBack);
@@ -91,7 +93,7 @@ namespace Laboration1_vaxelpengar
             Console.WriteLine("");
 
 
-            // Ange vilka valörer som ska ges tillbaka, ENDAST
+            // Ange vilka valörer som ska ges tillbaka
             uint rest = (uint)sumBack % 500;
             if (sumBack > 0)
             { 
